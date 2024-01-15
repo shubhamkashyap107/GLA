@@ -1,0 +1,14 @@
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.dabbe{
+    margin: auto;
+}
+
+@media screen and (max-width:1250px) {
+    #grid{
+        display: flex;
+        flex-direction: column;
+    }
+}

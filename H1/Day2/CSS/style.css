@@ -1,0 +1,6 @@
+div{
+    background-color: pink;
+}
+div > p{
+    font-size: 8px;
+}
