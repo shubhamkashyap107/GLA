@@ -1,0 +1,22 @@
+#abs{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+#rel{
+    height: 30vh;
+    width: 30vw;
+    border: 1px solid black;
+}
+
+#per{
+    height: 50%;
+    width: 50%;
+    border: 1px solid yellow;
+}
+/* 
+body{
+    border: 1px solid pink;
+    height: 100vh;
+} */

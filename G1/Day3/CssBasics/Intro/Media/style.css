@@ -1,0 +1,17 @@
+*{
+    background-color: black;
+}
+
+#newDiv{
+    height: 300px;
+    width: 300px;
+    border: 1px solid gold;
+}
+
+#final{
+    border: 1px solid white;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    color: white;
+}

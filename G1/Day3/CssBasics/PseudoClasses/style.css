@@ -1,0 +1,10 @@
+#box{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+p:nth-child(3){
+    color: pink;
+    border: 1px solid black;
+}
