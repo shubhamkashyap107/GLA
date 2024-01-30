@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar{
+    background-color: #ffc017;
+    display: flex;
+    justify-content: space-between;
+    height: 74px;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin: 10px;
+}
+
+
+/* //////////////////////////////////////////// */
+
+
+#yellow-canvas{
+    background-color: #ffc017;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+
+/* ////////////////////////////////////// */
+
+
+#trending-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+    /* border: 1px solid black; */
+    gap: 50px;
+}
