@@ -10,6 +10,10 @@
     height: 74px;
     border-bottom: 1px solid black;
     align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 99999;
 }
 .links{
     text-decoration: none;
@@ -40,4 +44,26 @@
     width: fit-content;
     /* border: 1px solid black; */
     gap: 50px;
+}
+
+
+
+/* ///////////////////////////// */
+
+#blogs{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#container-flex{
+    display: flex; 
+    /* border: 1px solid black; */
+    width: 90vw;
+    gap: 100px;
+}
+
+aside{
+    position: sticky;
+    top: 80px;
 }
