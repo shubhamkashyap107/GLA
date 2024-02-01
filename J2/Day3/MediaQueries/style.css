@@ -1,0 +1,41 @@
+/* div{
+    height: 400px;
+    width: 600px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width:600px) {
+    div{
+        background-color: pink;
+        width: 400px;
+    }
+} */
+
+
+section{
+    display: grid;
+    /* gap: 20px; */
+    grid-template-columns: 1fr 1fr;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: 1px solid black;
+}
+
+@media screen and (max-width:700px){
+    section{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+
+    div{
+        background-color: grey;
+        width: 400px;
+    }
+}

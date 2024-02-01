@@ -1,0 +1,35 @@
+/* section{
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid blue;
+} */
+
+
+
+section{
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+div{
+    border: 1px solid red;
+    height: 100px;
+    width: 100px;
+}
+
+
+#special{
+    background-color: yellow;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}

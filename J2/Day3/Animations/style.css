@@ -1,0 +1,25 @@
+/* @keyframes abc {
+    from{background-color: red;}
+    to{background-color: pink;}
+} */
+
+div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    /* background-color: red; */
+    /* animation-name: abc;
+    animation-duration: 3s; */
+    position: relative;
+    animation-name: kuchbhi;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes kuchbhi {
+    0%{background-color: red;top: 0px;left: 0px;}
+    25%{background-color: yellow;top: 0px;left:400px;}
+    50%{background-color:blue;top: 400px;left: 400px;}
+    75%{background-color: lavender;top: 400px;left: 0px;}
+    100%{background-color: white ; top: 0px; left: 0px;}
+}

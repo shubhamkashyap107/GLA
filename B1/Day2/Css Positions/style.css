@@ -1,32 +1,30 @@
-.box{
-    border: 1px solid black;
+div{
     height: 100px;
     width: 100px;
+    border: 1px solid black;
     display: inline-block;
 }
 
 #static{
     position: static;
     top: 100px;
-    left: 100px;
 }
 
 #relative{
     position: relative;
     bottom: 50px;
-    right: 50px;
+    left: 100px;
 }
 
 #absolute{
     position: absolute;
-    left: 200px;
-    bottom: 100px;
+
 }
 
 #fixed{
     position: fixed;
-    top: 200px;
-    right: 200px;
+    top: 000px;
+    right: 000px;
 }
 
 #sticky{

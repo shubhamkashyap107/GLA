@@ -1,0 +1,36 @@
+div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+#static{
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+
+#relative{
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}
+
+#absolute{
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+}
+
+#fixed{
+    position: fixed;
+    top: 200px;
+    right: 150px;
+}
+
+#sticky{
+    position: sticky;
+    top: 100px;
+    left: 100px;
+}

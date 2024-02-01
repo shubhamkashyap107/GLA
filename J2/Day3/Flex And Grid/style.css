@@ -1,0 +1,41 @@
+/* div{
+    background-color: purple;
+} */
+/* 
+section{
+    display: flex;
+    flex-wrap: wrap;
+     flex-direction: column-reverse; 
+    gap: 10px;
+    height: 400px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid yellow;
+} */
+
+
+section{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid blue;
+}
+
+
+#special{
+    background-color: gold;
+    grid-column-start: 2;
+}

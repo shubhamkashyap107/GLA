@@ -1,0 +1,28 @@
+/* @keyframes abcd {
+    from{background-color: red;}
+    to{background-color: purple;}
+}
+
+
+
+div{
+    animation-name: abcd;
+    animation-duration: 3s;
+} */
+
+
+
+@keyframes duniyahilado {
+    0%{ background-color: white; top: 0px; left: 0px; }
+    25%{ background-color: antiquewhite; top: 0px; left: 400px; }
+    50%{ background-color: blueviolet; top: 400px; left: 400px; }
+    75%{ background-color: aquamarine; top: 400px; left: 0px; }
+    100%{ background-color: white; top: 0px; left: 0px; }
+}
+
+div{
+    animation-name: duniyahilado;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
