@@ -1,0 +1,17 @@
+@keyframes naam {
+    0%{background-color: red; top: 0px; left: 0px; }
+    25%{background-color: yellow; top: 0px; left: 400px;}
+    50%{background-color: aqua; top: 400px; left: 400px;}
+    75%{background-color: pink; top: 400px;left: 0px;}
+    100%{background-color: black; top: 0px; left: 0px;}
+}
+
+
+div{
+    position: relative;
+    animation-name: naam;
+    animation-duration: 1s;
+    height: 100px;
+    width: 100px;
+    animation-iteration-count: infinite;
+}

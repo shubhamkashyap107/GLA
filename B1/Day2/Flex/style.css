@@ -1,0 +1,32 @@
+/* div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid gold;
+}
+
+#flex{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column-reverse; */
+    /* gap: 10px; */
+    /* justify-content: space-around;
+    align-items: center;
+    height: 400px; */
+/* } */
+
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+#special{
+    grid-column-start: 2;
+    background-color: gold;
+}

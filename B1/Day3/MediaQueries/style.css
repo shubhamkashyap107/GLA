@@ -1,0 +1,47 @@
+/* div{
+    height: 100px;
+    width: 600px;
+    background-color: black;
+}
+
+@media screen and (max-width:700px) {
+    div{
+        background-color: pink;
+        width: 300px;
+    }
+} */
+
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+div{
+    height: 100px;
+    width: 400px;
+    background-color: black;
+}
+
+
+@media screen and (max-width: 800px) {
+    div{
+        width: 200px;
+    }
+}
+
+
+@media screen  and (max-width: 500px){
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div{
+        margin: auto;
+        width: 80vw;
+
+    }
+}

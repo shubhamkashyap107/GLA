@@ -1,0 +1,192 @@
+       .dropdown-check-list {
+            display: inline-block;
+        }
+
+        .dropdown-check-list2 {
+            display: inline-block;
+        }
+
+        .dropdown-check-list .anchor {
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            padding: 5px 50px 5px 10px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        .dropdown-check-list2 .anchor2 {
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            padding: 5px 50px 5px 10px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        .dropdown-check-list .anchor:after {
+            position: absolute;
+            content: "";
+            border-left: 2px solid black;
+            border-top: 2px solid black;
+            padding: 5px;
+            right: 10px;
+            top: 20%;
+            -moz-transform: rotate(-135deg);
+            -ms-transform: rotate(-135deg);
+            -o-transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+        }
+
+        .dropdown-check-list2 .anchor2:after {
+            position: absolute;
+            content: "";
+            border-left: 2px solid black;
+            border-top: 2px solid black;
+            padding: 5px;
+            right: 10px;
+            top: 20%;
+            -moz-transform: rotate(-135deg);
+            -ms-transform: rotate(-135deg);
+            -o-transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+        }
+
+        .dropdown-check-list .anchor:active:after {
+            right: 8px;
+            top: 21%;
+        }
+
+        .dropdown-check-list2 .anchor2:active:after {
+            right: 8px;
+            top: 21%;
+        }
+
+        .dropdown-check-list ul.items {
+            padding: 2px;
+            display: none;
+            margin: 0;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        .dropdown-check-list ul.items li {
+            list-style: none;
+        }
+
+        /* .dropdown-check-list.visible .anchor {
+  color: #0094ff;
+} */
+
+        .dropdown-check-list.visible .items {
+            display: block;
+        }
+
+        .dropdown-check-list2 ul.items {
+            padding: 2px;
+            display: none;
+            margin: 0;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        .dropdown-check-list2 ul.items li {
+            list-style: none;
+        }
+
+        /* .dropdown-check-list.visible .anchor {
+  color: #0094ff;
+} */
+
+        .dropdown-check-list2.visible .items {
+            display: block;
+        }
+
+        /* ////added to test */
+        .selected-markets {
+            position: relative;
+        }
+
+        .hideContent {
+            /* visibility: hidden; */
+            display: none;
+        }
+    </style>
+
+
+
+<div style="height: 30px; display: flex; width:75%;margin-left:8%;height: 38px;" class="mt-3">
+
+                        <div class="input-group-text"
+                            style="width: 13.5rem; border-top-right-radius:0px;border-bottom-right-radius:0px;">
+                            Market
+                        </div>
+                        <div id="list1" class="dropdown-check-list" tabindex="100"
+                            style="height: 100%; width: 100%;background-color:white ;z-index: 3;">
+                            <span class="anchor" id="selectedMarketsText"
+                                style="height: 100%; width: 100%;border-radius:0px 5px 5px 0px;z-index:9999;">Select
+                                Market</span>
+                            <ul class="items" style="background-color:white ;">
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="All" />&nbsp;All </li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market"
+                                        value="Australia" />&nbsp;Australia </li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="Canada" />&nbsp;Canada
+                                </li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="France" />&nbsp;France</li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="Germany" />&nbsp;Germany
+                                </li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="Hong_Kong" />&nbsp;Hong
+                                    Kong</li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="Italy" />&nbsp;Italy</li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="Japan" />&nbsp;Japan</li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="Mexico" />&nbsp;Mexico</li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market"
+                                        value="Singapore" />&nbsp;Singapore</li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="UK" />&nbsp;UK</li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="US" />&nbsp;US</li>
+                            </ul>
+                            <div class="selected-markets"><span id="selectedMarkets"></span></div>
+                        </div>
+                    </div>
+
+
+
+
+        var checkList = document.getElementById('list1');
+        var visibleClass = 'visible';
+        var selectedMarketsTextElement = document.getElementById('selectedMarketsText');
+        var selectedMarketsElement = document.getElementById('selectedMarkets');
+        // Toggle visibility of the dropdown on anchor click
+        checkList.getElementsByClassName('anchor')[0].onclick = function (evt) {
+            if (checkList.classList.contains(visibleClass))
+                checkList.classList.remove(visibleClass);
+            else
+                checkList.classList.add(visibleClass);
+            // Prevent the click from propagating to the document
+            evt.stopPropagation();
+        };
+        // Listen for change in checkbox state to update selected markets
+        checkList.addEventListener('change', function () {
+            updateSelectedMarkets();
+        });
+        // Close the dropdown when clicking outside of it
+        document.addEventListener('click', function (evt) {
+            if (!checkList.contains(evt.target)) {
+                // Click is outside the dropdown, close it
+                checkList.classList.remove(visibleClass);
+            }
+        });
+        // Set the initial selected markets text based on selected checkboxes
+        updateSelectedMarkets();
+        // Update the displayed selected markets
+        function updateSelectedMarkets() {
+            var selectedMarkets = [];
+            var checkboxes = checkList.querySelectorAll('.items input[type="checkbox"]:checked');
+            checkboxes.forEach(function (checkbox) {
+                selectedMarkets.push(checkbox.value);
+            });
+            // Update the text in the dropdown anchor
+            selectedMarketsTextElement.textContent = selectedMarkets.length > 0 ? selectedMarkets.join(', ') : 'Select Markets';
+        }

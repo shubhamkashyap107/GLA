@@ -1,0 +1,33 @@
+<div style="height: 30px; display: flex; width:75%;margin-left:8%;height: 38px;" class="mt-3">
+
+                        <div class="input-group-text"
+                            style="width: 13.5rem; border-top-right-radius:0px;border-bottom-right-radius:0px;">
+                            Market
+                        </div>
+                        <div id="list1" class="dropdown-check-list" tabindex="100"
+                            style="height: 100%; width: 100%;background-color:white ;z-index: 3;">
+                            <span class="anchor" id="selectedMarketsText"
+                                style="height: 100%; width: 100%;border-radius:0px 5px 5px 0px;z-index:9999;">Select
+                                Market</span>
+                            <ul class="items" style="background-color:white ;">
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="All" />&nbsp;All </li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market"
+                                        value="Australia" />&nbsp;Australia </li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="Canada" />&nbsp;Canada
+                                </li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="France" />&nbsp;France</li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="Germany" />&nbsp;Germany
+                                </li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="Hong_Kong" />&nbsp;Hong
+                                    Kong</li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="Italy" />&nbsp;Italy</li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="Japan" />&nbsp;Japan</li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="Mexico" />&nbsp;Mexico</li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market"
+                                        value="Singapore" />&nbsp;Singapore</li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="UK" />&nbsp;UK</li>
+                                <li>&nbsp;<input type="checkbox" id="checkbox_market" value="US" />&nbsp;US</li>
+                            </ul>
+                            <div class="selected-markets"><span id="selectedMarkets"></span></div>
+                        </div>
+                    </div>
