@@ -1,0 +1,20 @@
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    border: 1px solid black;
+    /* gap: 50px; */
+    /* margin: 50px; */
+}
+
+
+div{
+    /* margin: 50px; */
+    height: 100px;
+    width: 100px;
+    border: 1px solid purple;
+}
+
+#special{
+    background-color: gold;
+    grid-column-start: 2;
+}

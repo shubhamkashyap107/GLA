@@ -1,0 +1,23 @@
+/* @keyframes abc {
+    from {background-color: red;}
+    to {background-color: pink;}
+} */
+
+div{
+    height: 100px;
+    width: 100px;
+    animation-name: xyz;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;  
+}
+
+
+@keyframes xyz {
+    0% {background-color: red; top: 0px; left: 0px;}
+    25% {background-color: yellow; top: 0px; left: 400px;}
+    50% {background-color: blue; top: 400px; left: 400px;}
+    75% {background-color: skyblue; top: 400px; left: 0px;}
+    100% {background-color: red; top: 0px; left: 0px;}
+}

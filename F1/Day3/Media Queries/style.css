@@ -1,0 +1,50 @@
+/* div{
+    background-color: pink;
+    height: 200px;
+    width: 200px;
+}
+
+@media screen and (max-width:600px) {
+ 
+    div{
+        background-color: aquamarine;
+        height: 100px;
+        width: 100px;
+    }
+
+} */
+
+section{
+    display: grid;
+    border: 1px solid pink;
+    grid-template-columns: 1fr 1fr;
+    /* width: 100%; */
+}
+
+div{
+    /* margin: 50px; */
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+
+@media screen and (max-width: 600px) {
+    div{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    div{
+        background-color: purple;
+    }
+}
+

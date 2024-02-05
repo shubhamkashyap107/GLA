@@ -1,0 +1,19 @@
+section{
+    border: 1px solid black;
+    /* height: 500px;
+    width: 500px; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column-reverse; */
+    justify-content: space-between;
+    /* align-items: center; */
+    /* gap: 50px; */
+}
+
+
+
+div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid blue;
+}
