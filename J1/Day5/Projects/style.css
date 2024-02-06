@@ -1,0 +1,33 @@
+#navbar{
+    height: 80px;
+    width: 100vw;
+    background-color: #ffc017;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0px;
+    z-index: 99999;
+}
+
+
+#canvas{
+    position: relative;
+    top: 80px;
+    height: 70vh;
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+}
+
+#trending{
+    margin-top: 100px;
+    
+}
+
+
+#blogs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
