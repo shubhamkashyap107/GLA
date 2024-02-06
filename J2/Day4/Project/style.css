@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+nav{
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 999999;
+}
+
+#navbarFlex{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#trending-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+    gap: 50px;
+    margin: auto;
+}
