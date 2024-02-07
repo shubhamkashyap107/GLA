@@ -1,0 +1,25 @@
+#navbar{
+    background-color: #ffc017;
+    height: 80px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    z-index: 2;
+}
+
+
+#canvas{
+    margin-top: 80px;
+    background-color: #ffc017;
+    height: 70vh;
+    border-bottom: 1px solid black;
+}
+
+#trending{
+    z-index: 1;
+    margin-top: 50px;
+}   
