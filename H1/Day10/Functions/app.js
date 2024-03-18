@@ -1,14 +1,14 @@
-// function test(){
-//     console.log("Hello from test");
+function test(){
+    console.log("Hello from test");
 
-//     function inner(){
-//         console.log("Hello from inner");
+    function inner(){
+        console.log("Hello from inner");
 
-//         return "PIKACHU"
-//     }
-
-//     return inner
-// }
+        return "PIKACHU"
+    }
+    // inner()
+    return inner
+}
 // test()
 // console.log(test());
 // inner()
@@ -23,21 +23,21 @@
 // console.log(ans);
 // console.log(sum(2,2));
 
-function calculator(a, b, fn){
-    let ans = fn(a,b)
-    console.log(ans);
-}
+// function calculator(a, b, fn){
+//     let ans = fn(a,b)
+//     console.log(ans);
+// }
 
-function sum(a,b){
-    return a + b
-}
-function mul(a,b){
-    return a * b
-}
+// function sum(a,b){
+//     return a + b
+// }
+// function mul(a,b){
+//     return a * b
+// }
 
-calculator(3,4, function(a,b){
-    return a * b
-})
+// calculator(3,4, function(a,b){
+//     return a * b
+// })
 
 
 
