@@ -10,7 +10,7 @@
 
 
 //     return xyz
-// }
+// // }
 // let innerFN = abc()
 // console.log(innerFN());
 
@@ -41,4 +41,24 @@
 // af()
 
 
+// function sum(a, b){
+//     return a + b
+// }
 
+// let ans = sum(1,2)
+// console.log(ans);
+
+
+
+function calculator(a, b, fn)
+{
+    let ans = fn(a,b)
+    console.log(ans);
+}
+function sum(a, b){
+    return a + b
+}
+function mul(a , b){
+    return a * b
+}
+calculator(2,10,sum)
