@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar{
+    height: 50px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+}   
+.abc:hover{
+    cursor: pointer;
+}

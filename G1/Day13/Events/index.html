@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <h1>EVENTS</h1>
+
+    <button onclick="darkMode()">CLick  me</button>
+
+
+    <script>
+        function example(){
+            console.log("Event trigerred");
+        }
+
+        function ex2(){
+            prompt("Enter your age")
+        }
+        
+        function darkMode(){
+            let body = document.querySelector("body")
+            body.setAttribute("style", "background-color:black")
+        }
+    </script>
+    <script src="./app.js"></script>
+</body>
+</html>
