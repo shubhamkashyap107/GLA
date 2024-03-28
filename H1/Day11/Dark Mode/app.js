@@ -3,7 +3,6 @@ let darkMode = document.getElementById("moon")
 let body = document.getElementById("bodie")
 let navbar = document.getElementById("navbar")
 let text = document.getElementsByClassName("text")
-// console.log(text);
 
 
 darkMode.addEventListener("click", () => {
