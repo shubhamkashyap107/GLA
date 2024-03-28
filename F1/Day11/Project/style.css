@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#navbar{
+    background-color: black;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.x{
+    color: white;
+}
+
+span:hover{
+    cursor: pointer;
+}
