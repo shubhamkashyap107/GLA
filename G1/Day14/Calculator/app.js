@@ -15,7 +15,7 @@ for(let item of btns)
                 let ans = eval(disp.value)
                 disp.value = ans        
             } catch (error) {
-                -
+                disp.value = "Invalid Input"
             }
         }
         else
