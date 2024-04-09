@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#player{
+    width: 400px;
+    margin: 50px auto;
+    border: 1px solid black;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    background-color: #EEEEEE;
+}
+
+body{
+    background-color: #222831;
+}
+
+#img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+section{
+    display: flex;
+    gap: 30px;
+}
