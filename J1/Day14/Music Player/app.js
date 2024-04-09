@@ -25,7 +25,6 @@ let songs = [
 
 let currIdx = 0;
 let currSong = new Audio("./media/song0.mp3")
-// currSong.play()
 
 playBtn.addEventListener("click", () => {
     if(playBtn.classList.contains("fa-play"))
