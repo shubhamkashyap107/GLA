@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #2b3037;
+}
+
+#player{
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #EEEEEE;
+}
+
+img{
+    height: 60%;
+    width: 100%;
+    border-radius: 14px;
+}
+
+section{
+    display: flex;
+    /* border: 1px solid black; */
+    height: 30px;
+    width: 50%;
+    justify-content: space-between;
+}
