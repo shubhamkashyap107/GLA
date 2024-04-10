@@ -2,6 +2,10 @@ let playBtn = document.getElementById("play")
 let slider = document.getElementById("slider")
 let songname = document.getElementById("songname")
 let next = document.getElementById("next")
+let volBtn = document.getElementById("volBtn")
+let volume = document.getElementById("volume")
+
+
 
 
 let songs = [
@@ -25,6 +29,8 @@ let songs = [
 
 let currID = 0
 let currSong = new Audio(`./media/song${currID}.mp3`)
+
+
 
 playBtn.addEventListener("click", () => {
     if(playBtn.classList.contains("fa-play"))
@@ -73,3 +79,4 @@ back.addEventListener("click", () => {
     currSong.play()
     songname.innerText = songs[currID].display
 })
+

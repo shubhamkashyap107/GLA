@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #222831;
+}
+
+#player{
+    height: 400px;
+    width: 400px;
+    /* border: 1px solid black; */
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #EEEEEE;
+}
+
+#songname{
+    font-size: 28px;
+    font-family: sans-serif;
+}
+
+img{
+    width: 100%;
+    border-radius: 14px;
+}
+
+section{
+    display: flex;
+    gap: 30px;
+}
