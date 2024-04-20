@@ -13,7 +13,7 @@ let songs = [
     },
     {
         idx : 1, 
-        name : "Movement"
+        name : "Movement",
     },
     {
         idx : 2, 
